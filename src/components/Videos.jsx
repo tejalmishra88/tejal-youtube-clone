@@ -6,7 +6,7 @@ const Videos = ({videos}) => {
     if(!videos?.length) return <Loader />;
   return (
     <Stack direction="row" flexWrap="wrap"
-    justifyContent="start" gap={2}> 
+    justifyContent="flex-start" gap={2}> 
      {videos.map((item, idx) => (
         <Box key={idx}>
           {item.id.videoId && <VideoCard video={item} /> }
